@@ -1,0 +1,346 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0;
+  margin: 0;
+  font-family: monserrat;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  /* Para que las imagenes no se superpongan */
+  z-index: 1;
+  background-color: white;
+}
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  width: 1200px;
+}
+
+.header h4 {
+  align-items: center;
+  background-color: #670b27;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 11px;
+}
+
+.nav__logo {
+  height: 80px;
+  top: 8px;
+  left: 8px;
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.navbar a {
+  text-decoration: none;
+  color: #8a8485;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.navbar li {
+  float: left;
+}
+
+/* submenus  */
+.navbar li ul {
+  list-style: none;
+  background-color: white;
+  display: none;
+  position: absolute;
+  width: 120px;
+  height: 220px;
+  padding: 0;
+  margin: 0;
+}
+
+/* >elementos directos */
+.navbar li:hover > ul {
+  display: block;
+}
+
+.navbar li ul li {
+  position: relative;
+}
+
+.navbar li ul li ul {
+  right: -140px;
+  top: 0px;
+}
+
+.navbar a:hover {
+  color: #670b27;
+}
+
+.menu_bar {
+  display: none;
+}
+
+/* fin navegador  */
+
+/*  comienxo main */
+.grid {
+  display: grid;
+  grid-template-rows: minmax(100px, auto);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "item0 item0 item0"
+    "item1 item2 item3";
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+/* .border {
+  border: 1px solid black;
+} */
+
+/* Fijate como nombre la clase, esto se llama BEM, googlealo */
+.img__grid {
+  width: 100%;
+  height: 100%;
+}
+
+.item0 {
+  grid-area: item0;
+}
+
+.item1 {
+  grid-area: item1;
+  /* img grande izq */
+}
+
+.item2 {
+  grid-area: item2;
+  /* img chica derecha arriba */
+}
+.item3 {
+  grid-area: item3;
+  /* img chica derecha abajo */
+}
+
+/* fin de grid */
+
+main img:hover {
+  transform: scale(0.98);
+  transition-duration: 0.5s;
+}
+
+/*  mas vendido  */
+h2 {
+  text-align: center;
+  background-color: #670b27;
+  color: white;
+  padding: 15px 20px;
+  font-size: 20px;
+}
+
+/* footer */
+footer {
+  background-color: #3f0718;
+  text-align: center;
+  color: white;
+}
+
+.container--footer {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin: auto;
+}
+
+.column1 {
+  max-width: 500px;
+}
+
+.column1 h1 {
+  font-size: 22px;
+}
+
+.column1 p {
+  font-size: 14px;
+  color: #c7c7c7;
+  text-align: center;
+}
+
+.column2 {
+  max-width: 300px;
+}
+
+.column2 h3 {
+  font-size: 22px;
+}
+
+.column2 ul li a {
+  text-decoration: none;
+  color: #c7c7c7;
+  font-size: 14px;
+}
+
+.column2 li {
+  list-style: none;
+  float: left;
+  margin-left: 80px;
+  text-align: left;
+}
+
+.row {
+  margin-top: 20px;
+}
+
+.column3 {
+  max-width: 400px;
+}
+
+.column3 h3 {
+  font-size: 22px;
+}
+
+.column3 p {
+  font-size: 14px;
+  color: #c7c7c7;
+}
+
+.column3 button {
+  background-color: white;
+  color: #670b27;
+  width: 60px;
+  height: 25px;
+  border: none;
+}
+.column3 input {
+  height: 22px;
+}
+
+.column3 button:hover {
+  background-color: #ecbfcd;
+  transform: scale(1.02);
+  transition-duration: 0.5s;
+}
+
+/* 
+
+
+
+
+
+*/
+/* para celus */
+@media (max-width: 768px) {
+  .header h4 {
+    display: none;
+  }
+
+  .navbar {
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    margin: 0;
+    /* top: 0;
+    left: 0; */
+    background-color: #773348;
+  }
+
+  #check-menu {
+    display: none;
+  }
+
+  .navbar li {
+    display: block;
+    float: none;
+    border-bottom: 1px solid white;
+  }
+
+  .navbar li a {
+    justify-content: center;
+    color: white;
+  }
+
+  .navbar a:hover {
+    background-color: #670b27;
+    color: white;
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+  }
+
+  .nav__logo {
+    display: block;
+    top: 0;
+    left: 50%;
+    position: fixed;
+    height: 74px;
+  }
+
+  .menu_bar {
+    display: block;
+    width: 100%;
+  }
+
+  header label {
+    display: block;
+    padding: 20px;
+    color: #670b27;
+    text-decoration: none;
+    font-size: 30px;
+    left: 0;
+    position: relative;
+    width: 30px;
+  }
+
+  .check-menu {
+    display: none;
+  }
+
+  header label:hover {
+    background-color: #773348;
+    color: white;
+  }
+
+  /* footer */
+  .container--footer {
+    width: 400px;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-areas:
+      "item1"
+      "item3"
+      "item2";
+    row-gap: 10px;
+  }
+
+  .item1 {
+    grid-area: item1;
+  }
+
+  .item2 {
+    grid-area: item2;
+  }
+
+  .item3 {
+    grid-area: item3;
+  }
+}

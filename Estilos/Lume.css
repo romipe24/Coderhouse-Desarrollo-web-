@@ -1,0 +1,50 @@
+nav {
+  position: fixed;
+  background-color: white;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+
+.nav__logo {
+  height: 110px;
+  top: 8px;
+  left: 8px;
+}
+
+.navbar {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+nav .navbar a {
+  text-decoration: none;
+  color: #8a8485;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.navbar__submenu--producto {
+  display: none;
+}
+
+.navbar a:hover {
+  /* background: #670b27; */
+  color: #670b27;
+  display: block;
+}

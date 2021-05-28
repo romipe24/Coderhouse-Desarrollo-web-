@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="Estilos/contacto.css" />
+    <!-- link para tener simbolos de Fontawseome -->
+    <script
+      src="https://kit.fontawesome.com/ec0b35b541.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <nav>
+      <img
+        class="logo"
+        src="imagenes/logo coral chiquito.png"
+        alt="Logo CoralDecoart"
+      />
+
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">CoralArt</a></li>
+          <li><a href="Bastik.html">Bastik</a></li>
+          <li><a href="Historia.html">Historia</a></li>
+          <li><a href="Productos.html" title="Productos">Productos</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="navbar">
+        <ul class="navbar__submenu--producto">
+          <li><a href=""> Cuadros</a></li>
+          <li><a href=""> Posavasos</a></li>
+          <li><a href=""> Macetas</a></li>
+          <li><a href=""> Otros</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="content">
+        <h1 class="logoContacto">Mandame tu <span> Consulta </span></h1>
+        <div class="contact-wrapper">
+          <div class="contact-form">
+            <form>
+              <p>
+                <!-- INPUT PARA PONER NOMBRE Y APELLIDO EMAIL-->
+                <label for="nombre">Nombre</label>
+                <input type="text" placeholder="Nombre" name="nombre" />
+              </p>
+              <p>
+                <label for="apellido">Apellido</label>
+                <input type="text" placeholder="Apellido" name="apellido" />
+              </p>
+              <p>
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  placeholder="Ingrese su email"
+                  name="email"
+                />
+              </p>
+              <p>
+                <!-- CHECKBOX MOTIVO -->
+                <label for="motivoconsulta">Motivo consulta</label>
+                <select name="consulta" id="consula">
+                  <option value="compra">Coral Art</option>
+                  <option value="envios">Balkis</option>
+                  <option value="otro">Lume</option>
+                </select>
+              </p>
+              <!-- MENSAJE -->
+              <p class="block">
+                <label for="textoconsulta">Mensaje</label>
+                <textarea
+                  id="textoconsulta"
+                  name="textoconsulta"
+                  placeholder="Escriba aqui"
+                ></textarea>
+              </p>
+              <div class="block" style="display: flex; justify-content: center;">
+                <button type="submit" value="Submit">Enviar</button>
+              </div>
+            </form>
+          </div>
+            <div class="contact-info">
+              <ul>
+                <li>
+                  <br />
+                  <i class="fas fa-map-marker-alt"></i> Montevideo, Uruguay
+                </li>
+                <li>
+                  <i class="fas fa-globe-americas"></i> Envios a todo el mundo
+                </li>
+                <li><i class="far fa-envelope"></i> CoralArt@gmail.com</li>
+                <br />
+                <br />
+                <li class="lineal">
+                  <i class="fab fa-instagram"></i> Coral.DecoArt
+                </li>
+                <li class="lineal">
+                  <i class="fab fa-instagram"></i> Balkis.Uy
+                </li>
+                <li class="lineal">
+                  <i class="fab fa-instagram"></i> Lume_ViveroBoutique
+                </li>
+              </ul>
+              
+              
+              <p>
+                Gracias por ayudar a pequenos <br />
+                emprendimientos de mujeres Uruguayas. <br />
+                Cada compra es un mimo al alma
+              </p>
+              <br />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
