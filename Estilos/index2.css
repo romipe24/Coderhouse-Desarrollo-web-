@@ -64,7 +64,6 @@ nav {
   float: left;
 }
 
-/* submenus  */
 .navbar li ul {
   list-style: none;
   background-color: white;
@@ -74,20 +73,6 @@ nav {
   height: 220px;
   padding: 0;
   margin: 0;
-}
-
-/* >elementos directos */
-.navbar li:hover > ul {
-  display: block;
-}
-
-.navbar li ul li {
-  position: relative;
-}
-
-.navbar li ul li ul {
-  right: -140px;
-  top: 0px;
 }
 
 .navbar a:hover {
