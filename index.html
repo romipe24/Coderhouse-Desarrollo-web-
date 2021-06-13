@@ -1,161 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CoralDecoArt</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="Estilos/index2.css" />
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  <script
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoralDecoArt</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="Estilos/index2.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://kit.fontawesome.com/ec0b35b541.js"
       crossorigin="anonymous"
     ></script>
-</head>
+  </head>
 
-<body>
-  <header class="header">
+  <body>
+    <header class="header">
+      <h4>ENVIOS GRATIS CON COMPRAS MAYORES A $1000</h4>
+      <nav>
+        <div class="dropdown menu_bar">
+          <a
+            class="btn btn-secondary dropdown-toggle"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="fas fa-bars"></span>
+          </a>
 
-    <h4>ENVIOS GRATIS CON COMPRAS MAYORES A $1000</h4>
-    <nav>
-      <div class="dropdown menu_bar">
-        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-          <span class="fas fa-bars"></span>
-        </a>
-      
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <li><a class="dropdown-item" href="#">CoralArt</a></li>
-          <li><a class="dropdown-item" href="#">Plantitas</a></li>
-          <li><a class="dropdown-item" href="#">Historia</a></li>
-          <li><a class="dropdown-item" href="#">Productor</a></li>
-          <li><a class="dropdown-item" href="#">Contacto</a></li>
-        </ul>
-      </div>
-      <img class="nav__logo" src="imagenes/logo coral chiquito.png" alt="Logo CoralDecoart" />
-
-      <div>
-        <ul class="navbar ">
-          <li><a href="index.html">CoralArt</a></li>
-
-          <li><a href="Balkis.html">Balkis</a></li>
-
-          <li><a href="Lume.html">Lume</a></li>
-
-          <li><a href="Productos.html" title="Productos">Productos</a>
-          
-          <li><a href="Contacto.html">Contacto</a></li>
-        </ul>
-      </div>
-
-      <div>
-    </nav>
-  </header>
-
-  <main>
-    <!-- carrusel -->
-    <div id="carouselExampleIndicators" class="carousel slide  mt--carousel" data-bs-ride="carousel">
-      <div class="carousel-indicators ">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="imagenes/carrusel inicio mismo tamano/artist.jpg" class="d-block w-100" alt="...">
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="#">CoralArt</a></li>
+            <li><a class="dropdown-item" href="#">Plantitas</a></li>
+            <li><a class="dropdown-item" href="#">Historia</a></li>
+            <li><a class="dropdown-item" href="#">Productor</a></li>
+            <li><a class="dropdown-item" href="#">Contacto</a></li>
+          </ul>
         </div>
-        <div class="carousel-item">
-          <img src="imagenes/carrusel inicio mismo tamano/home.jpg" class="d-block w-100" alt="...">
+        <img
+          class="nav__logo"
+          src="imagenes/logo coral chiquito.png"
+          alt="Logo CoralDecoart"
+        />
+
+        <div>
+          <ul class="navbar">
+            <li><a href="index.html">CoralArt</a></li>
+
+            <li><a href="Balkis.html">Plantitas</a></li>
+
+            <li><a href="Lume.html">Historia</a></li>
+
+            <li><a href="Productos.html" title="Productos">Productos</a></li>
+
+            <li><a href="Contacto.html">Contacto</a></li>
+          </ul>
         </div>
-        <div class="carousel-item">
-          <img src="imagenes/carrusel inicio mismo tamano/plantas.jpg" class="d-block w-100" alt="...">
+
+        <div class="container-fluid buscador">
+          <form class="d-flex">
+            <input
+              class="form-control buscador--input me-2"
+              type="search"
+              placeholder="Buscar Productos..."
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success buscador--button"
+              type="submit"
+            >
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- carrusel -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide mt--carousel"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="imagenes/carrusel inicio mismo tamano/artist.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="imagenes/carrusel inicio mismo tamano/home.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="imagenes/carrusel inicio mismo tamano/plantas.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <section class="grid border">
+        <div class="item1 border">
+          <a href="Productos.html">
+            <img
+              class="img__grid"
+              src="imagenes/alcohol ink.jpg"
+              alt="Alcohol ink"
+            />
+          </a>
+        </div>
+        <div class="item2 border">
+          <a href="Bastik.html"
+            ><img
+              class="img__grid"
+              src="imagenes/suculenta.jpg"
+              alt="Macetas"
+            />
+          </a>
+        </div>
+        <div class="item3 border">
+          <a href="Productos.html">
+            <img
+              class="img__grid"
+              src="imagenes/acrylic pouring.jpg"
+              alt="Acrilic"
+            />
+          </a>
+        </div>
+      </section>
+      <section>
+        <h3>~ Lo mas vendido ~</h3>
+        <hr width="200" />
+
+        <img src="" alt="Ebook Alcohol ink para principiantes" />
+        <img src="" alt="Tips, Materiales" />
+      </section>
+    </main>
+
+    <footer>
+      <br />
+      <div class="container--footer">
+        <div class="column1 item1">
+          <h1>Arte Uruguayo</h1>
+          <p>
+            <br />
+            Coral Art es un emprendimiento realizado por
+            <span> artistas Uruguayas. </span> Creando piezas unicas a mano con
+            amor y dedicacion. Conoce mas de nuestros proyectos en nuestros
+            instagrams.
+          </p>
+          <br />
+        </div>
+
+        <div class="column2 item2">
+          <h3>Instagrams</h3>
+          <ul class="lineal">
+            <li class="row">
+              <i class="fab fa-instagram"></i> <a href=""> Coral.DecoArt</a>
+            </li>
+            <li class="row">
+              <i class="fab fa-instagram"></i> <a href=""> Balkis.Uy</a>
+            </li>
+            <li class="row">
+              <i class="fab fa-instagram"></i>
+              <a href=""> Lume_ViveroBoutique</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column3 item3">
+          <h3>Newsletter</h3>
+          <p class="row">¡Suscribite y recibí todas nuestras novedades!</p>
+          <!-- Ingresa tu mail -->
+          <label for="email"></label>
+          <input class="row" type="text" placeholder=" Ingresa tu email" />
+          <!-- boton para subscribirse -->
+          <button class="row" type="submit">Submit</button>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-
-
-
-    <section class="grid border">
-      <div class="item1 border">
-        <a href="Productos.html">
-          <img class="img__grid" src="imagenes/alcohol ink.jpg" alt="Alcohol ink" />
-        </a>
-      </div>
-      <div class="item2 border">
-        <a href="Bastik.html"><img class="img__grid" src="imagenes/suculenta.jpg" alt="Macetas" />
-        </a>
-      </div>
-      <div class="item3 border">
-        <a href="Productos.html">
-          <img class="img__grid" src="imagenes/acrylic pouring.jpg" alt="Acrilic" />
-        </a>
-      </div>
-    </section>
-    <section>
-      <h3>~ Lo mas vendido ~</h3>
-      <hr width="200" />
-
-      <img src="" alt="Ebook Alcohol ink para principiantes" />
-      <img src="" alt="Tips, Materiales" />
-    </section>
-  </main>
-
-  <footer>
-    <br>
-    <div class="container--footer">
-      <div class="column1 item1">
-        <h1>Arte Uruguayo</h1>
-        <p> <br>
-          Coral Art es un emprendimiento realizado por
-          <span> artistas Uruguayas. </span> Creando piezas unicas a mano
-          con amor y dedicacion. 
-          Conoce mas de nuestros proyectos en nuestros instagrams. 
-        </p><br>
-        
-      </div>
-      
-
-      <div class="column2 item2">
-        <h3>Instagrams</h3> 
-        <ul class="lineal">
-          <li class="row "> <i class="fab fa-instagram"></i> <a href=""> Coral.DecoArt</a>
-          </li>
-          <li class="row "> <i class="fab fa-instagram"></i> <a href=""> Balkis.Uy</a> 
-          </li>
-          <li class="row "> <i class="fab fa-instagram"></i> <a href=""> Lume_ViveroBoutique</a> 
-          </li>
-        </ul>
-      </div>
-
-
-      <div class="column3 item3"> 
-        <h3>Newsletter</h3> 
-        <p class="row">¡Suscribite y recibí todas nuestras novedades!</p>
-        <!-- Ingresa tu mail -->
-        <label for="email"></label>
-        <input class="row" type="text" placeholder=" Ingresa tu email" /> 
-        <!-- boton para subscribirse -->
-        <button class="row" type="submit">Submit</button>
-      </div>
-    </div>
-    
-
-    
-      
-
-    
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-</body>
-
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
