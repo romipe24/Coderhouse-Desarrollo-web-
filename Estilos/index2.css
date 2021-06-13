@@ -184,90 +184,70 @@ main h3 {
 }
 
 /* footer */
-footer {
+.footer--container {
   background-color: #3f0718;
   text-align: center;
   color: white;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.container--footer {
-  width: 100%;
-  max-width: 1200px;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  margin: auto;
-}
-
-.column1 {
-  max-width: 500px;
-}
-
-.column1 h1 {
+.footer--container__column1 h1 {
   font-size: 22px;
 }
 
-.column1 p {
+.footer--container__column1 p {
   font-size: 14px;
   color: #c7c7c7;
   text-align: center;
 }
 
-.column2 {
-  max-width: 300px;
-}
-
-.column2 h3 {
+.footer--container__column2 h3 {
   font-size: 22px;
 }
 
-.column2 ul li a {
-  text-decoration: none;
-  color: #c7c7c7;
-  font-size: 14px;
-}
-
-.column2 li {
-  list-style: none;
-  float: left;
-  margin-left: 80px;
-  text-align: left;
-}
-
-.row {
-  margin-top: 20px;
-}
-
-.column3 {
-  max-width: 400px;
-}
-
-.column3 h3 {
-  font-size: 22px;
-}
-
-.column3 p {
+.footer--container__column2 p {
   font-size: 14px;
   color: #c7c7c7;
 }
 
-.column3 button {
+.footer--container__column2 button {
   background-color: white;
   color: #670b27;
   width: 60px;
   height: 25px;
   border: none;
 }
-.column3 input {
+.footer--container__column2 input {
   height: 22px;
+  margin-bottom: 30px;
 }
 
-.column3 button:hover {
+.footer--container__column2 button:hover {
   background-color: #ecbfcd;
   transform: scale(1.02);
   transition-duration: 0.5s;
 }
 
+.footer--container__column3 h3 {
+  font-size: 22px;
+}
+
+.footer--container__column3 ul {
+  list-style: none;
+}
+
+.footer--container__column3 li {
+  padding: 3px;
+}
+
+.footer--container__column3 ul li a {
+  text-decoration: none;
+  color: #c7c7c7;
+  font-size: 14px;
+}
 /* 
 
 
@@ -327,30 +307,5 @@ footer {
       " item1 item2"
       "item3 item3";
     row-gap: 3%;
-  }
-
-  /* footer */
-  .container--footer {
-    width: 400px;
-    display: grid;
-    justify-content: center;
-    grid-template-rows: 1fr, 1fr, 1fr;
-    grid-template-areas:
-      "item1"
-      "item3"
-      "item2";
-    row-gap: 10px;
-  }
-
-  .item1 {
-    grid-area: item1;
-  }
-
-  .item2 {
-    grid-area: item2;
-  }
-
-  .item3 {
-    grid-area: item3;
   }
 }
