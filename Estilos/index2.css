@@ -3,10 +3,25 @@
   padding: 0px;
 }
 
-body {
-  margin: 0;
-  margin: 0;
-  font-family: monserrat;
+.mt--carousel {
+  margin-top: 80px;
+}
+
+.dropdown-toggle {
+  background-color: #3f0718;
+  margin-top: 20px;
+  margin-left: 7px;
+}
+
+.dropdown-item {
+  text-align: center;
+  width: 350px;
+  padding: 40px;
+  border-bottom: 1px solid white;
+  color: white;
+  background-color: #3f0718;
+  font-family: Arial, Helvetica, sans-serif;
+  /* z-index: 999;  para que no se vean flechitas del carousel por arriba */
 }
 
 header {
@@ -19,6 +34,7 @@ header {
   background-color: white;
 }
 nav {
+  font-family: monserrat;
   background-color: white;
   display: flex;
   justify-content: left;
@@ -239,6 +255,10 @@ footer {
 @media (max-width: 768px) {
   .header h4 {
     display: none;
+  }
+
+  .header {
+    height: 80px;
   }
 
   .navbar {
