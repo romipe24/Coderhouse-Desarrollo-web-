@@ -3,10 +3,6 @@
   padding: 0px;
 }
 
-.mt--carousel {
-  margin-top: 80px;
-}
-
 .nav,
 .dropdown-toggle {
   background-color: #3f0718;
@@ -17,7 +13,7 @@
 .nav,
 .dropdown-item {
   text-align: center;
-  width: 300px;
+  width: 400px;
   padding: 40px;
   border-bottom: 1px solid white;
   color: white;
@@ -26,19 +22,21 @@
   /* z-index: 999;  para que no se vean flechitas del carousel por arriba */
 }
 
-.buscador {
+.nav--buscador {
   width: auto;
   margin-right: 10px;
 }
 
-.buscador--button {
+.nav--buscador__button {
   color: #3f0718;
   border-color: #3f0718;
 }
 
-.buscador--button:hover {
+.nav--buscador__button:hover {
   background-color: #3f0718;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: background-color 0.5s ease-out;
   transition: background-color 0.5s ease-out;
 }
 
@@ -51,22 +49,20 @@ header {
   z-index: 1;
   background-color: white;
 }
+
 nav {
   font-family: monserrat;
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: left;
-  align-items: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: auto;
-}
-
-.header h4 {
-  align-items: center;
-  background-color: #670b27;
-  color: white;
-  text-align: center;
-  padding: 8px;
-  font-size: 11px;
 }
 
 .nav__logo {
@@ -75,18 +71,36 @@ nav {
   left: 8px;
 }
 
+.header h4 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3f0718;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 11px;
+}
+
 .navbar {
   list-style: none;
   padding: 0;
   margin: 0;
   text-align: center;
 }
+
 .navbar a {
   text-decoration: none;
   color: #8a8485;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 30px 20px;
   font-size: 15px;
   text-transform: uppercase;
@@ -109,32 +123,38 @@ nav {
   margin: 0;
 }
 
-.navbar a:hover {
-  color: #670b27;
+.navbar li a:hover {
+  color: #3f0718;
 }
 
-.menu_bar {
+.nav--menu__burger {
   display: none;
 }
 
 /* fin navegador  */
-
 /*  comienxo main */
+.main--mt__carousel {
+  margin-top: 80px;
+}
+
 .grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: inherit;
   width: 100%;
-  column-gap: 4%;
+  -webkit-column-gap: 4%;
+          column-gap: 4%;
   padding: 5%;
   padding-left: 10%;
   padding-right: 10%;
-  grid-template-rows: 500px;
+  -ms-grid-rows: 500px;
+      grid-template-rows: 500px;
 }
 
 /* .border {
-  border: 1px solid black;
-} */
-
+    border: 1px solid black;
+  } */
 .img__grid {
   width: 100%;
   height: 100%;
@@ -149,18 +169,13 @@ nav {
   grid-area: item2;
   /* img chica derecha arriba */
 }
+
 .item3 {
   grid-area: item3;
   /* img chica derecha abajo */
 }
 
 /* fin de grid */
-
-main section img:hover {
-  transform: scale(0.98);
-  transition-duration: 0.5s;
-}
-
 /*  mas vendido  */
 main h3 {
   text-align: center;
@@ -170,17 +185,29 @@ main h3 {
   padding: 20px;
 }
 
+main section img:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
 .main--topsale {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  column-gap: 3%;
-  justify-content: center;
+  -webkit-column-gap: 3%;
+          column-gap: 3%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 50px;
 }
 
 .main--topsale__img {
   width: 300px;
   height: 300px;
-  border: 1px solid rgb(207, 200, 200);
+  border: 1px solid #cfc8c8;
 }
 
 /* footer */
@@ -195,6 +222,10 @@ main h3 {
 }
 
 .footer--container__column1 h1 {
+  font-size: 22px;
+}
+
+.footer--container__column1 h3 {
   font-size: 22px;
 }
 
@@ -215,11 +246,12 @@ main h3 {
 
 .footer--container__column2 button {
   background-color: white;
-  color: #670b27;
+  color: #3f0718;
   width: 60px;
   height: 25px;
   border: none;
 }
+
 .footer--container__column2 input {
   height: 22px;
   margin-bottom: 30px;
@@ -227,20 +259,22 @@ main h3 {
 
 .footer--container__column2 button:hover {
   background-color: #ecbfcd;
-  transform: scale(1.02);
-  transition-duration: 0.5s;
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .footer--container__column3 h3 {
   font-size: 22px;
 }
 
-.footer--container__column3 ul {
-  list-style: none;
-}
-
 .footer--container__column3 li {
   padding: 3px;
+}
+
+.footer--container__column3 ul {
+  list-style: none;
 }
 
 .footer--container__column3 ul li a {
@@ -248,22 +282,23 @@ main h3 {
   color: #c7c7c7;
   font-size: 14px;
 }
+
 /* 
-
-
-
-
-
-*/
-
+  
+  
+  
+  
+  
+  */
 /* para tablets*/
 @media (max-width: 1090px) {
   .grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     height: auto;
   }
-
-  .buscador--input {
+  .nav--buscador__input {
     display: none;
   }
 }
@@ -273,19 +308,15 @@ main h3 {
   .header h4 {
     display: none;
   }
-
   .header {
     height: 80px;
   }
-
-  .buscador {
-    margin-top: 20px;
-  }
-
   .navbar {
     display: none;
   }
-
+  .nav--buscador {
+    margin-top: 20px;
+  }
   .nav__logo {
     display: block;
     top: 0;
@@ -293,19 +324,19 @@ main h3 {
     position: fixed;
     height: 74px;
   }
-
-  .menu_bar {
+  .nav--menu__burger {
     display: block;
     width: 100%;
   }
-
   .grid {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: minmax(200px);
-    grid-template-rows: 350px 300px;
-    grid-template-areas:
-      " item1 item2"
-      "item3 item3";
+    -ms-grid-columns: minmax(200px);
+        grid-template-columns: minmax(200px);
+    -ms-grid-rows: 350px 300px;
+        grid-template-rows: 350px 300px;
+        grid-template-areas: " item1 item2" "item3 item3";
     row-gap: 3%;
   }
 }
+/*# sourceMappingURL=index.css.map */

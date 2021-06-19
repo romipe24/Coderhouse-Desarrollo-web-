@@ -16,7 +16,7 @@
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="Estilos/index2.css" />
+    <link rel="stylesheet" href="SASS/index.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
@@ -32,7 +32,7 @@
     <header class="header">
       <h4>ENVIOS GRATIS CON COMPRAS MAYORES A $1000</h4>
       <nav>
-        <div class="dropdown menu_bar">
+        <div class="dropdown nav--menu__burger">
           <a
             class="btn btn-secondary dropdown-toggle"
             href="#"
@@ -45,11 +45,15 @@
           </a>
 
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <li><a class="dropdown-item" href="#">CoralArt</a></li>
-            <li><a class="dropdown-item" href="#">Plantitas</a></li>
-            <li><a class="dropdown-item" href="#">Historia</a></li>
-            <li><a class="dropdown-item" href="#">Productor</a></li>
-            <li><a class="dropdown-item" href="#">Contacto</a></li>
+            <li><a class="dropdown-item" href="index.html">CoralArt</a></li>
+            <li>
+              <a class="dropdown-item" href="Plantitas.html">Plantitas</a>
+            </li>
+            <li><a class="dropdown-item" href="Historia.html">Historia</a></li>
+            <li>
+              <a class="dropdown-item" href="Productos.html">Productos</a>
+            </li>
+            <li><a class="dropdown-item" href="Contacto.html">Contacto</a></li>
           </ul>
         </div>
         <img
@@ -62,9 +66,9 @@
           <ul class="navbar">
             <li><a href="index.html">CoralArt</a></li>
 
-            <li><a href="Balkis.html">Plantitas</a></li>
+            <li><a href="Plantitas.html">Plantitas</a></li>
 
-            <li><a href="Lume.html">Historia</a></li>
+            <li><a href="Historia.html">Historia</a></li>
 
             <li><a href="Productos.html" title="Productos">Productos</a></li>
 
@@ -72,16 +76,16 @@
           </ul>
         </div>
 
-        <div class="container-fluid buscador">
+        <div class="container-fluid nav--buscador">
           <form class="d-flex">
             <input
-              class="form-control buscador--input me-2"
+              class="form-control nav--buscador__input me-2"
               type="search"
               placeholder="Buscar Productos..."
               aria-label="Search"
             />
             <button
-              class="btn btn-outline-success buscador--button"
+              class="btn btn-outline-success nav--buscador__button"
               type="submit"
             >
               <i class="fas fa-search"></i>
@@ -95,7 +99,7 @@
       <!-- carrusel -->
       <div
         id="carouselExampleIndicators"
-        class="carousel slide mt--carousel"
+        class="carousel slide main--mt__carousel"
         data-bs-ride="carousel"
       >
         <div class="carousel-indicators">
@@ -150,7 +154,7 @@
           data-bs-slide="prev"
         >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+          <span class="visually-hidden">Siguiente</span>
         </button>
         <button
           class="carousel-control-next"
@@ -159,7 +163,7 @@
           data-bs-slide="next"
         >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+          <span class="visually-hidden">Anterior</span>
         </button>
       </div>
 
