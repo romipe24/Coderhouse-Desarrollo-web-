@@ -4,30 +4,216 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Historia</title>
-    <link rel="stylesheet" href="Estilos/Lume.css" />
+    <title>CoralDecoArt</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="SASS/historia.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ec0b35b541.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
-    <div class="item1 border">
+    <header class="header">
+      <h4>ENVIOS GRATIS CON COMPRAS MAYORES A $1000</h4>
       <nav>
+        <div class="dropdown nav--menu__burger">
+          <a
+            class="btn btn-secondary dropdown-toggle"
+            href="#"
+            role="button"
+            id="dropdownMenuLink"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="fas fa-bars"></span>
+          </a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="index.html">CoralArt</a></li>
+            <li>
+              <a class="dropdown-item" href="Plantitas.html">Plantitas</a>
+            </li>
+            <li><a class="dropdown-item" href="Historia.html">Historia</a></li>
+            <li>
+              <a class="dropdown-item" href="Productos.html">Productos</a>
+            </li>
+            <li><a class="dropdown-item" href="Contacto.html">Contacto</a></li>
+          </ul>
+        </div>
         <img
           class="nav__logo"
           src="imagenes/logo coral chiquito.png"
           alt="Logo CoralDecoart"
         />
 
-        <div class="navbar">
-          <ul>
+        <div>
+          <ul class="navbar">
             <li><a href="index.html">CoralArt</a></li>
-            <li><a href="Bastik.html">Bastik</a></li>
+
+            <li><a href="Plantitas.html">Plantitas</a></li>
+
             <li><a href="Historia.html">Historia</a></li>
+
             <li><a href="Productos.html" title="Productos">Productos</a></li>
+
             <li><a href="Contacto.html">Contacto</a></li>
           </ul>
         </div>
-      </nav>
-    </div>
 
-    <main></main>
+        <div class="container-fluid nav--buscador">
+          <form class="d-flex">
+            <input
+              class="form-control nav--buscador__input me-2"
+              type="search"
+              placeholder="Buscar Productos..."
+              aria-label="Search"
+            />
+            <button
+              class="btn btn-outline-success nav--buscador__button"
+              type="submit"
+            >
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <img
+        src="imagenes/Historia.jpg"
+        class="img-fluid"
+        alt="foto que representa mis comienzos"
+      />
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo
+        illum, commodi numquam praesentium non, magni doloribus quaerat
+        reprehenderit aliquid consequuntur tempora assumenda fugiat distinctio
+        pariatur minus voluptates repudiandae minima dolore. Lorem ipsum dolor
+        sit amet consectetur, adipisicing elit. Explicabo illum, commodi numquam
+        praesentium non, magni doloribus quaerat reprehenderit aliquid
+        consequuntur tempora assumenda fugiat distinctio pariatur minus
+        voluptates repudiandae minima dolore.Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Explicabo illum, commodi numquam
+        praesentium non, magni doloribus quaerat reprehenderit aliquid
+        consequuntur tempora assumenda fugiat distinctio pariatur minus
+        voluptates repudiandae minima dolore. Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Explicabo illum, commodi numquam
+        praesentium non, magni doloribus quaerat reprehenderit aliquid
+        consequuntur tempora assumenda fugiat distinctio pariatur minus
+        voluptates repudiandae minima dolore.
+      </p>
+      <div class="row row-cols-2 row-cols-md-4 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Hobby1</h5>
+              <p class="card-text">Aca algo sobre primer hobby</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">hobby 2</h5>
+              <p class="card-text">This is a short card.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="..." class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <br />
+      <div class="row footer--container">
+        <div class="footer--container__column1 col-lg-4 col-xs-8">
+          <h1>Arte Uruguayo</h1>
+          <p>
+            <br />
+            Coral Art es un emprendimiento realizado por
+            <span> artistas Uruguayas. </span> Creando piezas unicas a mano con
+            amor y dedicacion. Conoce mas de nuestros proyectos en nuestros
+            instagrams.
+          </p>
+          <br />
+        </div>
+
+        <div class="footer--container__column2 col-lg-4 col-xs-12">
+          <h3>Newsletter</h3>
+          <p class="">¡Suscribite y recibí todas nuestras novedades!</p>
+          <!-- Ingresa tu mail -->
+          <label for="email"></label>
+          <input class="" type="text" placeholder=" Ingresa tu email" />
+          <!-- boton para subscribirse -->
+          <button class="" type="submit">Submit</button>
+        </div>
+
+        <div class="footer--container__column3 col-lg-4 col-xs-12">
+          <h3>Instagrams</h3>
+          <ul class="lineal">
+            <li class="">
+              <i class="fab fa-instagram"></i> <a href=""> Coral.DecoArt</a>
+            </li>
+            <li class="">
+              <i class="fab fa-instagram"></i> <a href=""> Balkis.Uy</a>
+            </li>
+            <li class="">
+              <i class="fab fa-instagram"></i>
+              <a href=""> Lume_ViveroBoutique</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
