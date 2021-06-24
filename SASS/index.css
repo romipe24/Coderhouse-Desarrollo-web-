@@ -167,6 +167,10 @@ main section img:hover {
           transition-duration: 0.5s;
 }
 
+main .card {
+  width: 20rem;
+}
+
 .main--topsale {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -296,6 +300,10 @@ main section img:hover {
   .nav--menu__burger {
     display: block;
     width: 100%;
+  }
+  .card {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 /*# sourceMappingURL=index.css.map */

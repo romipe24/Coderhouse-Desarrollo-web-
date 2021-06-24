@@ -151,6 +151,9 @@ main {
       transition-duration: 0.5s;
     }
   }
+  .card {
+    width: 20rem;
+  }
 }
 
 .main--topsale {
@@ -279,5 +282,10 @@ main {
   .nav--menu__burger {
     display: block;
     width: 100%;
+  }
+
+  .card {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
