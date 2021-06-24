@@ -252,7 +252,7 @@ a {
 }
 
 .product {
-  background-color: #fff;
+  background-color: white;
   text-align: center;
 }
 
@@ -261,22 +261,18 @@ a {
   position: relative;
 }
 
-.product .product-image a.image {
-  display: block;
-}
-
 .product .product-image img {
   width: 100%;
   height: auto;
 }
 
+.product .product-image .image {
+  display: block;
+}
+
 .product .product-image .pic-1 {
   -webkit-transition: 0.5s;
   transition: 0.5s;
-}
-
-.product .product-image:hover .pic-1 {
-  opacity: 0;
 }
 
 .product .product-image .pic-2 {
@@ -292,12 +288,20 @@ a {
   transition: 0.5s;
 }
 
+.product .product-image:hover .pic-1 {
+  opacity: 0;
+}
+
 .product .product-image:hover .pic-2 {
   opacity: 1;
 }
 
+.product .content {
+  padding: 12px;
+}
+
 .product .discount {
-  color: #fff;
+  color: white;
   background-color: #c66;
   font-size: 12px;
   font-weight: 600;
@@ -311,8 +315,8 @@ a {
 }
 
 .product .cart {
-  color: #000;
-  background-color: #fff;
+  color: black;
+  background-color: white;
   font-size: 14px;
   font-weight: 500;
   text-transform: uppercase;
@@ -331,12 +335,8 @@ a {
 
 .product .cart:hover {
   opacity: 1;
-  color: #fff;
+  color: white;
   background-color: #c66;
-}
-
-.product:hover .cart {
-  bottom: 0px;
 }
 
 .product .links {
@@ -352,32 +352,18 @@ a {
   margin-bottom: 5px;
 }
 
-.product:hover .links {
-  opacity: 1;
-  right: 10px;
-}
-
 .product .links li a {
-  color: #fff;
+  color: white;
   font-size: 12px;
   line-height: 30px;
   width: 30px;
   height: 30px;
   border-radius: 30px;
   display: block;
-  background-color: #000;
+  background-color: black;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   margin-bottom: 5px;
-}
-
-.product:hover .links li a:hover {
-  color: #fff;
-  background-color: #c66;
-}
-
-.product .content {
-  padding: 12px;
 }
 
 .product .category {
@@ -387,14 +373,14 @@ a {
 }
 
 .product .category a {
-  color: #999;
+  color: #8a8485;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   font-size: 14px;
 }
 
 .product .category a:hover {
-  color: #555;
+  color: #464646;
 }
 
 .product .title {
@@ -404,7 +390,7 @@ a {
 }
 
 .product .title a {
-  color: #444;
+  color: #464646;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -420,10 +406,24 @@ a {
 }
 
 .product .price span {
-  color: #888;
+  color: #8a8485;
   margin: 0 5px 0 0;
   font-weight: 300;
   font-size: 14px;
+}
+
+.product:hover .cart {
+  bottom: 0px;
+}
+
+.product:hover .links {
+  opacity: 1;
+  right: 10px;
+}
+
+.product:hover .links li a:hover {
+  color: white;
+  background-color: #c66;
 }
 
 @media screen and (max-width: 990px) {
