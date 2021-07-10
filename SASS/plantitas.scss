@@ -2,6 +2,9 @@ $color-principal: #3f0718;
 $color-blanco: white;
 $color-gris: #c7c7c7;
 $color-gristexto: #8a8485;
+$color-bottomhover: #a51e47;
+$color-verdeoscuro: rgb(53, 90, 19);
+$color-verdeclaro: rgb(84, 139, 33);
 
 * {
   margin: 0px;
@@ -116,10 +119,73 @@ nav {
 
 /* fin navegador  */
 
-main p {
-  text-align: center;
-  padding: 20px;
-  font-size: 14px;
+main {
+  margin-top: 100px;
+}
+
+main {
+  p {
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    span {
+      font-size: 22px;
+      color: rgb(53, 90, 19);
+    }
+  }
+  h2 {
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(53, 90, 19);
+  }
+
+  /*Lo siguiente es para el grid de imgs*/
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    .column {
+      flex: 33.3%; /*porque son tres columnas*/
+      width: auto;
+      overflow: hidden;
+      padding: 0 4px;
+      height: 100%;
+    }
+    .column img {
+      margin-top: 2%;
+      width: 100%;
+      height: 250px;
+      filter: grayscale(1) brightness(0.7);
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s linear;
+    }
+    .col-medio img {
+      height: 334px;
+    }
+    .column img:hover {
+      filter: grayscale(0) brightness(1);
+    }
+  }
+}
+/*Fin grid de imagenes*/
+
+/*centrar cards del main. */
+.img__grid {
+  width: auto;
+  height: 300px;
+}
+.main--card__bottom {
+  color: $color-blanco;
+  background-color: $color-principal;
+  border: 1px solid $color-bottomhover;
+}
+
+.main--card__bottom:hover {
+  color: $color-blanco;
+  background-color: $color-bottomhover;
 }
 
 /* footer */
@@ -236,5 +302,18 @@ main p {
   .nav--menu__burger {
     display: block;
     width: 100%;
+  }
+
+  main .row .column {
+    flex: 50%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main .row .column {
+    flex: 100%;
+  }
+  .row .column img {
+    filter: grayscale(0) brightness(1);
   }
 }
