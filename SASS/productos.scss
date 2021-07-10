@@ -117,8 +117,49 @@ nav {
 .nav--menu__burger {
   display: none;
 }
+//fin nac//
+
+//menu//
+
+// .menu2 {
+//   margin-top: 150px;
+//   margin-left: 15px;
+//   background-color: blueviolet;
+//   width: 1fr;
+//   height: auto;
+//   height: 100%;
+//   position: absolute;
+//   li {
+//     background-color: red;
+//     width: auto;
+//     padding: 8px;
+//   }
+// }
+
+// main .container {
+//   margin-top: 150px;
+//   width: 50%;
+//   justify-content: left;
+// }
+main {
+  margin-top: 120px;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  .column-menu {
+    flex: 30%;
+    width: auto;
+    overflow: hidden;
+  }
+  .column-productos {
+    flex: 70%;
+  }
+}
 
 /* footer */
+
 .footer--container {
   background-color: $color-principal;
   text-align: center;
@@ -127,6 +168,7 @@ nav {
   padding-top: 20px;
   padding-left: 50px;
   padding-right: 50px;
+  margin-bottom: 0;
 
   &__column1 {
     h1 {
@@ -229,10 +271,6 @@ nav {
 
 //comienzo de main //
 main {
-  display: grid;
-  place-items: center;
-  width: 100%;
-  height: 100vh;
   font-family: "Roboto", sans-serif;
 }
 
@@ -278,7 +316,7 @@ a {
 }
 
 // hasta aca es para que aparezca una imagen arriba de la otra //
-
+//comienza para que aparezcan las cositas al ponerse arriba//
 .product {
   .content {
     padding: 12px;
@@ -395,6 +433,10 @@ a {
     }
   }
 }
+
+//fin de todo lo que es sobre los productos //@at-root
+
+//comienzo de menu de productos a la izquierda//
 
 @media screen and (max-width: 990px) {
   .product {
