@@ -132,10 +132,24 @@ nav {
 }
 
 /* fin navegador  */
-main p {
+main .contenedor__texto {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   padding: 20px;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+main .contenedor__texto h2 {
+  padding-top: 20px;
+  color: #3f0718;
+}
+
+main .contenedor__texto h3 {
+  color: #8a8485;
+  font-size: 15px;
+  margin-bottom: 20px;
 }
 
 /* footer */
